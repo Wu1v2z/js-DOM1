@@ -54,3 +54,17 @@ h2 {
     transition: background-color 0.2s;
 }
 
+.button-group button:hover {
+    background-color: #0056b3;
+}
+
+.result-area {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

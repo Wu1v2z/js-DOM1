@@ -8,7 +8,21 @@
 </head>
 <body>
     <div class="calculator-container">
-        
+        <h2>Веб-калькулятор</h2>
+        <div class="input-group">
+            <input type="text" id="input1" placeholder="Перше число">
+            <input type="text" id="input2" placeholder="Друге число">
+        </div>
+        <div class="button-group">
+            <button onclick="calculate('+')">+</button>
+            <button onclick="calculate('-')">-</button>
+            <button onclick="calculate('*')">*</button>
+            <button onclick="calculate('/')">/</button>
+        </div>
+        <div class="result-area">
+            <p id="result">Результат: </p>
+            <p id="error-message" class="error-message"></p>
+        </div>
     </div>
 
 

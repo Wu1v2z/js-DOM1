@@ -4,21 +4,17 @@ function calculate(operator) {
     const resultElement = document.getElementById('result');
     const errorMessageElement = document.getElementById('error-message');
 
-    // Очищаємо попередні повідомлення
     resultElement.textContent = 'Результат: ';
     errorMessageElement.textContent = '';
 
-    // Перевірка на порожні поля
     if (input1 === '' || input2 === '') {
         errorMessageElement.textContent = 'Будь ласка, введіть обидва числа.';
         return;
     }
 
-    // Перетворення вхідних даних на числа
     const num1 = Number(input1);
     const num2 = Number(input2);
 
-    // Перевірка на некоректні дані (не-числа)
     if (isNaN(num1) || isNaN(num2)) {
         errorMessageElement.textContent = 'Будь ласка, введіть коректні числа.';
         return;
@@ -37,7 +33,7 @@ function calculate(operator) {
             result = num1 * num2;
             break;
         case '/':
-            // Обробка ділення на нуль
+            
             if (num2 === 0) {
                 errorMessageElement.textContent = 'Ділення на нуль неможливе.';
                 return;
@@ -48,7 +44,6 @@ function calculate(operator) {
             return;
     }
 
-    // Округлення до сотих, якщо число не є цілим
     if (result % 1 !== 0) {
         result = result.toFixed(2);
     }

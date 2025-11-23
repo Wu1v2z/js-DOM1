@@ -68,3 +68,15 @@ h2 {
     flex-direction: column;
     justify-content: center;
 }
+
+#result {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.error-message {
+    color: #dc3545;
+    font-weight: bold;
+    margin: 0;
+}

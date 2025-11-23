@@ -32,7 +32,7 @@ function calculate(operator) {
         case '*':
             result = num1 * num2;
             break;
-        case '/':
+        case ':':
             
             if (num2 === 0) {
                 errorMessageElement.textContent = 'Це не вища математика!';

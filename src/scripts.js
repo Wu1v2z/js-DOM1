@@ -35,7 +35,7 @@ function calculate(operator) {
         case '/':
             
             if (num2 === 0) {
-                errorMessageElement.textContent = 'Ділення на нуль неможливе.';
+                errorMessageElement.textContent = 'Це не вища математика!';
                 return;
             }
             result = num1 / num2;

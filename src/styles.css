@@ -17,3 +17,14 @@ body {
     width: 300px;
 }
 
+h2 {
+    margin-top: 0;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
